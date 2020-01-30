@@ -34,11 +34,14 @@ p {
     border-radius: 15px;
     background: goldenrod;
 }
+q {
+    display: none;
+}
 footer {
     font-size: x-small;
 }
 
-.hide {
-    display:none;
+.show {
+    display: inherit
  }
 
