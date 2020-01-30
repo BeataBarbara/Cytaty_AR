@@ -12,7 +12,7 @@ function love () {
     var x = document.getElementById("cytaty").childElementCount; 
     for (i=1; i<=x; i++) {
         elem = document.getElementById("cytat_", i)
-        if (elem.getAttribute("class", "hide")) {
+        if (elem.getAttribute("class") == "hide") {
             alert("abbbb")
         } else {
             alert("abrfggvkfjs")
