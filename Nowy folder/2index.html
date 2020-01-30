@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+<h1>Wysoluj cytat Ayn Rand!</h1>
+<p>
+    <script> 
+        Array.prototype.random = function (limit) {
+            if (typeof limit == 'undefined' || limit < 0) limit = 1;
+            else if (!limit) limit = this.length;
+            for (var i = 0, source = this, target = new Array(), n = source.length; i < limit && n > 0; i++) {
+                do { var index = Math.random(); } while (index == 1);
+                index = Math.floor(index * n);
+                target.push(source[index]);
+                source[index] = source[--n];
+            }
+            return target;
+        }
+        var losowanieID = document.getElementsByClassName("cytat");
+        console.log(losowanieID);
+
+        document.write(new Array(
+            'Moralność jest sferą, w której kompromis nie jest możliwy.',
+            'Idei nie można zwalczyć inaczej niż lepszą ideą.',
+            'Idee kończą się tam, gdzie zaczyna się przemoc.',
+            'Francisco, jaki człowiek jest najbardziej zdemoralizowany? - Ten, który nie ma celu.',
+            ' Nie lubię ludzi, którzy mówią lub myślą w kategoriach zdobywania czyjegoś zaufania. Jeśli czyjeś działania są uczciwe, nie potrzebuje zawczasu zaufania innych, jedynie ich racjonalnego postrzegania. Osoba, która pragnie tego rodzaju moralnego czeku in blanco, ma nieuczciwe zamiary, niezależnie od tego, czy przyznaje się przed sobą do tego czy nie.',
+            ' Mistyk to ktoś, kto wyrzekł się własnego umysłu przy pierwszym zetknięciu z umysłami innych. Gdzieś w dzieciństwie, gdy jego pojmowanie rzeczywistości zderzyło się z cudzymi twierdzeniami, arbitralnymi rozkazami i sprzecznymi żądaniami, ogarnął go tak przemożny lęk przed niezależnością, że wyrzekł się rozumu. Mając wybór między "ja wiem" a "oni mówią", wybrał autorytet innych, wolał się podporządkować, niż zrozumieć, wolał wierzyć, niż myśleć. Wiara w nadprzyrodzoność zaczyna się od wiary w wyższość innych. Jego poddanie się przybrało formę uczucia, że musi ukryć brak zrozumienia, że inni posiadają jakąś tajemną wiedzę, której sam jest pozbawiony i że w jakiś niedostępny mu sposób potrafią tak zaczarować rzeczywistość, by odpowiadała ich życzeniom. ',
+            ' Zdolność do niezmąconej radości nie jest udziałem nieodpowiedzialnych głupców; niezłomny spokój ducha nie jest osiągnięciem ludzi pozbawionych celu; zdolność do takiego śmiechu jest końcowym wynikiem najgłębszego, najwznioślejszego myślenia. ',
+            ' Wy istniejecie po to, by uniknąć kary. My po to, by zdobywać nagrody. ',
+            ' I ponieważ, nawet leżąc zmiażdżona pod gruzami budynku, nawet rozdarta przez zrzuconą na jej głowę bombę, dopóki żyła, wiedziała, że działanie jest podstawowym obowiązkiem człowieka, niezależnie od wszystkiego, co czuje. ',
+            ' Człowiek uczciwy to taki, który wie, że nie może skonsumować więcej, niż wytworzył. ',
+            ' Ilekroć ktoś oskarża kogoś o to, że jest pozbawiony uczuć, chce przez to powiedzieć, że jest sprawiedliwy. Chce powiedzieć, że osoba nie żywi bezpodstawnych emocji i nie obdarzy ich uczuciem, na które nie zasługują. Chce powiedzieć, że "czuć", znaczy sprzeciwiać się rozsądkowi, wartościom moralnym i rzeczywistości. ',
+            'Uczciwość polega na uznaniu faktu, że to, co nierzeczywiste, jest nierzeczywiste i nie może mieć żadnej wartości, że ani miłości, ani sławy, ani pieniędzy nie zdobywa się za pomocą oszustwa — że próba zdobycia wartości poprzez oszukiwanie cudzych umysłów stanowi akt wynoszenia swoich ofiar ponad rzeczywistość, stwarzanie sytuacji, w której sam stajesz się pionkiem w rękach ich ślepoty, niewolnikiem ich bezmyślności i uników, podczas gdy ich inteligencja, rozumność i spostrzegawczość stają się wrogami, których musisz się bać i wystrzegać — że człowiek nie chce żyć jako istota uzależniona, szczególnie zaś uzależniona od cudzej głupoty, ani jako dureń czerpiący wartość z otumaniania innych durniów — że uczciwość nie jest obowiązkiem społecznym ani poświęceniem dla dobra innych, lecz najbardziej samolubną cnotą, jaką może praktykować człowiek: odmową poświęcenia rzeczywistości własnego istnienia na rzecz cudzych iluzji',
+            ' moje życie jest największą wartością, zbyt wielką, by ją oddawać bez walki. ',
+            'Początkiem waszej moralności jest potępienie, a celem, środkiem i końcem zniszczenie. Wasz kodeks zaczyna się od potępienia człowieka jako istoty złej, po czym żąda od niego czynienia dobra, które sam określa jako niewykonalne. Pierwszego dowodu cnoty, jakiego żąda się od człowieka, jest akceptacja "faktu" własnego zepsucia bez dowodu. Żąda, by od pierwszej chwili kierował się nie kryterium wartości, lecz kryterium zła, które stanowi on sam i za pomocą którego ma odtąd definiować dobro: dobrem jest to, czym on nie jest. Imię tego monstrualnego absurdu brzmi : grzech pierworodny. ',
+'Potrafi żyć, panno Taggart, bo nie uważamy, że ziemia jest padołem łez, a człowiek na niej żyjący musi ulec zagładzie. Nie uważamy, że naszym przeznaczeniem jest tragedia, i nie żyjemy w ciągłym strachu przed katastrofą. Nie spodziewamy się katastrofy, jeśli nie mamy po temu jakiegoś szczególnego powodu. A kiedy ona nadciąga, możemy z nią walczyć. Za stan nienaturalny uważamy nie szczęście, lecz cierpienie. Za nienormalne odstępstwo w ludzkim życiu uznajemy nie sukces, lecz klęskę. ',
+'Jeśli tak zwane społeczeństwo uważa, że jego dobro wymaga ofiar, mogę tylko powiedzieć: do diabła ze społeczeństwem, ja nie wezmę w tym udziału! ',
+'Przysięgam na swoje życie i swoją miłość do niego, że nigdy nie będę żył dla innego człowieka ani prosił go, by żył dla mnie. ',
+'A zatem sądzi pan, że pieniądze są źródłem zła? [...] - A czy zapytał pan kiedykolwiek, co jest źródłem pieniędzy? Pieniądze są narzędziem wymiany, która nie może istnieć, jeśli nie istnieje produkcja towarów i ludzie, którzy je produkują. Pieniądze są materialną formą zasady mówiącej, że ludzie, którzy chcą załatwiać ze sobą interesy, muszą to robić w formie handlu, płacąc wartość za wartość. [...] Pieniądze są tworzone - zanim będzie można je zagrabić lub wyłudzić - wysiłkiem każdego uczciwego człowieka, wysiłkiem na miarę jego możliwości. [...] Pieniądze pozwalają panu otrzymać za swoje towary i swoją pracę tyle, ile są one warte dla ludzi, którzy je kupują, ale nie więcej. Pieniądze nie pozwalają na żadne transakcje z wyjątkiem tych, które obie strony dobrowolnie uznają za korzystne. ',
+'... nie ma niewinnych kłamstw, jest tylko najpotworniejsza destrukcja, a niewinne kłamstwa najwierniej jej służą. ',
+'... to nie jest tak, że nie cierpię. Wiem tylko, jak nieistotne jest cierpienie, wiem, że ból trzeba pokonać i odrzucić, a nie akceptować jako część swojej duszy i wieczną bliznę na swojej wizji życia. ',
+'Panie Rearden — rzekł Francisco z uroczystym spokojem — gdyby zobaczył pan Atlasa, olbrzyma, który dźwiga na ramionach świat, stojącego z krwią spływającą po piersi, zgiętymi kolanami, drżącymi rękoma, lecz wciąż ostatkiem sił dźwigającego świat, choć ten staje się tym cięższy, im większy jego wysiłek — co by mu pan powiedział? — Nie wiem. Co mógłby zrobić? A co pan by mu powiedział? — Żeby dał sobie z tym spokój. ',
+'Nigdy nie czułem się winien swoich umiejętności. Nigdy nie czułem się winien swojego umysłu. Nigdy nie czułem się winien bycia człowiekiem (...). Odkąd pamiętam, czułem, że zabiłbym człowieka, który żądałby, abym żył dla zaspokojenia jego potrzeb - i wiedziałem, że moje uczucia są przejawem najwyższej moralności. ',
+'Przez wieki bitwa o moralność toczyła się pomiędzy tymi, którzy twierdzili, że życie należy do Boga, i tymi, którzy twierdzili, że należy do sąsiadów - pomiędzy orędownikami doktryny, że dobro polega na poświęceniu się na rzecz duchów w niebie i orędownikami doktryny, że dobro polega na poświęceniu się na rzecz miernot na ziemi. Nie pojawił się nikt, kto by powiedział, że życie należy do was i że dobro polega na przeżywaniu go. ',
+' Jak przez mgłę przypomniał sobie kazania o tym, jak pięknie jest składać siebie w ofierze i jak szlachetnie oddawać innym to, co najbardziej się kocha. Nie znał się na etyce, ale nagle zrozumiał - nie w formie słów, lecz mrocznego, gniewnego, zwierzęcego bólu - że jeśli na tym polega szlachetność, nie chce mieć w niej udziału. ',
+'Cokolwiek by się z nią działo, nigdy nie opuści jej niezłomne przeświadczenie, że zło jest nienaturalne i przemijające. ',
+'Moralność, która ośmiela się nakazywać wam znajdowanie szczęścia w wyrzeczeniu się go - każe wychwalać klęskę swoich wartości - jest bezczelną negacją moralności.',
+'[...] Zbudujemy system polityczny oparty na pojedynczej przesłance moralnej: żaden człowiek nie może uzyskiwać od innych żadnych wartości, uciekając się do siły fizycznej. ',
+'Wykup swój umysł z lombardu autorytetów. ',
+'  Nie masz obowiązków wobec nikogo z wyjątkiem siebie. ',
+'   Nie zamierzam przepraszać za swój talent, za swój sukces ani za swoje pieniądze. ',
+'W każdym momencie swego życia macie wolny wybór: możecie myśleć lub uchylać się od myślenia. ',
+'Wynalazca to człowiek, który pyta wszechświat: "Dlaczego? i nie pozwala, by cokolwiek stanęło między odpowiedzią a jego umysłem. ',
+' (...) tylko ci, którzy uważają seks i siebie samych za złych, są zdolni do uprawiania go z byle kim i byle jak. ',
+' ... uważaliśmy to za potworne! - przeświadczenia, że katastrofy są przypisane człowiekowi przez naturę, że trzeba je znosić, a nie zwalczać. Nie mogę zaakceptować uległości. Bezsilności. Wyrzeczenia. ',
+'Każda sprawa ma dwa końce: jeden jest słuszny, a drugi niesłuszny; to co pośrodku, jest jednak zawsze złe. ',
+'Ludzie sądzą, że kłamca odnosi zwycięstwo nad ofiarą. Ja jednak nauczyłem się, że kłamstwo jest sprzeniewierzeniem się samemu sobie, bo rezygnuje się z własnej rzeczywistości na rzecz człowieka, którego się okłamuje, czyniąc go swoim panem i skazując się od tego momentu na udawanie takiej rzeczywistości, jakiej domagają się jego poglądy. I jeśli dzięki kłamstwu osiąga się doraźny cel, płaci się potem cenę niszczącą to, czemu owa zdobycz miała służyć. Człowiek, który okłamuje świat, jest od tej pory niewolnikiem świata. ',
+'Charakterystyczną cechą mentalności stadnej jest bezmyślne, niemal instynktowne traktowanie ludzkiego życia jako nawozu, paliwa czy środka dla różnych planów społecznych. ',
+'Cnotę dumy najlepiej daje się zdefiniować określeniem „ambicja moralna”. Oznacza to, że trzeba zdobyć – poprzez dążenie do własnej perfekcji moralnej – prawo do przedstawiania siebie jako wzoru wartości – prawo to zdobywa się, nie akceptując nigdy żadnego kodeksu irracjonalnego, irracjonalnych wartości, których nie sposób przestrzegać, aż drugiej strony, zawsze przestrzegając zasad racjonalnych – prawo to zdobywa się przez odmowę akceptowania niezasłużonej winy i nie popełniając takowej – lub, jeżeli już zostanie popełniona, niepozostawianie jej nie naprawionej – nie poddając się nigdy biernie słabościom charakteru – nigdy nie przykładając żadnej wagi ani nie przedkładając żadnego życzenia, obawy lub chwilowego nastroju ponad wartość własnej godności. A przede wszystkim oznacza to odrzucenie roli zwierzęcia ofiarnego, nietolerowanie żadnej doktryny, która głosi potrzebę samopoświęcania, traktując to jako moralną cnotę czy obowiązek. ',
+'Człowiek jest jedynym żyjącym gatunkiem mającym moc działania na swoją zgubę i tak też działał w przeważającym okresie swej historii. ',
+'Duma to rzetelna reakcja na możliwość osiągnięcia założonych wartości, to przyjemność, jaką czerpie się ze swej skuteczności. I to mistycy uznają za zło. ',
+'Główną ludzką wadą, źródłem wszystkich błędów jest akt dekoncentrowania umysłu, zawieszenia świadomości, co w konsekwencji prowadzi nie tyle do ślepoty, ile do umyślnego niedostrzegania, nie tyle do ignorancji, ile do umyślnego niewidzenia. ',
+'Irracjonalność to odrzucenie instrumentów przetrwania i dlatego oznacza angażowanie się w postępowanie unicestwiające; to, co jest przeciw umysłowi, jest także przeciw życiu samemu. ',
+'Każda duża czy mała grupa bądź kolektyw jest jedynie pewną liczbą jednostek. Grupa nie może mieć uprawnień innych niż prawa poszczególnych jej członków. ',
+'Metafizycznie życie jest jedynym fenomenem będącym końcem samym w sobie: wartością zdobytą i podtrzymywaną przez stały proces działania. Epistemologicznie, pojęcie wartości jest genetycznie zależne i wyprowadzone z wcześniejszego pojęcia życia. Mówienie o „wartości” w oderwaniu od „życia” jest gorsze niż sprzeczność w określeniach. Jedynie pojęcie „życie” uzasadnia pojęcie „wartość”. ',
+'Moralność dotyczy jedynie takich sytuacji, kiedy człowiek może wybierać. ',
+'Nie może być kompromisu między wolnością a nadzorem ze strony rządu. Zgoda choćby na niewielki nadzór jest rezygnacją z zasady niezbywalnych praw jednostki i podstawieniem na jej miejsce zasady nieograniczonej, arbitralnej władzy rządu. ',
+'Nie może być kompromisu w dziedzinie zasad podstawowych ani spraw fundamentalnych. Cóż moglibyście uznać za kompromis między życiem a śmiercią? ',
+'Podstawową zasadą społeczną etyki absolutnej jest założenie, iż tak jak życie jest celem samym w sobie, tak każda żywa istota ludzka stanowi cel sam w sobie, a więc nie może być środkiem do celów czy dobrobytu innych, z czego wynika, że „osiągnięcie własnego szczęścia jest najwyższym moralnym celem człowieka”. ',
+'Prawo do życia jest źródłem wszystkich praw człowieka, prawo własności zaś umożliwia ich realizację. Bez prawa własności inne prawa byłyby nierealne.',
+'Społeczeństwo nie jest bytem istniejącym realnie, jako że jest ono po prostu pewną liczbą pojedynczych osób. A zatem, jeżeli ktoś twierdzi lub sugeruje, że istnieje konflikt między interesem społecznym a interesem osób prywatnych, oznacza to tylko, że interesy niektórych ludzi mają być poświęcone w imię interesów i zachcianek innych ludzi. ',
+'W żadnym wypadku i w żadnej sytuacji nie wolno milczeć, gdy inni atakują czy potępiają nasze własne wartości. ',
+'Wiedza jest warunkiem przetrwania każdego organizmu posiadającego świadomość: dla żywej świadomości każde „jest” implikuje „powinno”. Człowiek może chcieć nie być świadomym, ale nie może uciec od kary wynikającej z nieświadomości: destrukcji. ',
+'Idee kończą się tam, gdzie zaczyna się przemoc. ',
+'Idei nie można zwalczyć inaczej niż lepszą ideą. ',
+'Moralność jest sferą, w której kompromis nie jest możliwy. ',
+'Poziom tchórzostwa znacznie poniżej konformizmu to „modny nonkonformizm”. ',
+'Prawa człowieka nie wynikają z przynależności do grupy i nie może istnieć ani w prawie, ani w moralności działanie zabronione jednostce, a dozwolone tłumowi. '
+    ).random().join(''));
+    </script>
+
+</p>
+</div>
+</body>
+
+</html>
